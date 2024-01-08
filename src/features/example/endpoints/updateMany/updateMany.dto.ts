@@ -1,6 +1,6 @@
 import { ArrayNotEmpty, IsDefined } from "class-validator";
 import { OmitType } from "@nestjs/mapped-types";
-import { UpdateOneDto } from "@/features/example/dto/UpdateOne.dto";
+import { UpdateOneDto } from "@/features/example/endpoints/updateOne/updateOne.dto";
 
 // update many dto contains same fields as update one dto except _id field
 export class UpdateManyDto extends OmitType(UpdateOneDto, ["_id"]) {
